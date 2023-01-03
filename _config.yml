@@ -3,7 +3,7 @@ author: "Jimmy van Ameyde"
 description: "Created via GitHub pages, Contrast theme for Jekyll."
 permalink: /:title/
 lang: "en"
-excerpt_separator: "\n\n\n"
+excerpt_separator: <!--more-->
 date_format: "%B %d, %Y"
 
 # Layout
