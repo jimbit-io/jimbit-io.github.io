@@ -11,7 +11,7 @@ Howdy! 🤠
 
 Over here I will try to focus my posts as much as possible on providing relatively easy to understand tutorials, scripts and how-to's with a strong focus towards real-life IT (networking) challenges.
 
-#### Points of interest at time of writing are:
+### Points of interest at time of writing are:
 {% highlight posh %}
 $interests = @{
     Networking     = "Cisco, Palo Alto, Fortinet"
