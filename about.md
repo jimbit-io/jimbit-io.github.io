@@ -1,3 +1,4 @@
+# About
 ## Personal
 👋 Hi, nice to meet you. I'm Jimmy van Ameyde, residing in the Netherlands and working as a freelancer under my company-name 'Jimbit'.
 
