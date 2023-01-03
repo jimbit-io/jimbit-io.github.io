@@ -23,7 +23,5 @@ $interests = @{
 {% endhighlight %}
 
 Thanks for dropping by, and hopefully see you soon.
-
-👋 Jim
-
 ![JimbitLogo](/assets/images/Jimbit-Logo-Transparant-Square-100x100.png)
+👋 Jim
