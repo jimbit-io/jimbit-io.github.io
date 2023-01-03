@@ -15,6 +15,6 @@
   </footer>
 {% endif %}
 
-{% if post.content > post.excerpt.size %}
+{% if post.content.size > post.excerpt.size %}
 <p><a href="{{ post.url }}">(read more)</a></p>
 {% endif %}
