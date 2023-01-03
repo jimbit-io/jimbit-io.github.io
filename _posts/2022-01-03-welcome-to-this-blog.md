@@ -1,6 +1,8 @@
 ---
 title: "Welcome to this blog."
 layout: post
+category: blog
+tags: [non-technical]
 ---
 
 Howdy! 🤠
