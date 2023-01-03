@@ -25,3 +25,4 @@ Thanks for dropping by, and hopefully see you soon.
 👋 Jim
 
 <a href="jimbit.io"><img src="/_data/images/Jimbit-Logo-Transparant.png" width=10% height=10%></a>
+![JimbitLogo](_data/images/Jimbit-Logo-Transparant-Square-100x100.png)
