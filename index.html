@@ -8,6 +8,3 @@ title: "Blog"
 {% else %}
   {% include archive.html title="Posts" %}
 {% endif %}
-{% if post.content > post.excerpt.size %}
-<p><a href="{{ post.url }}">(read more)</a></p>
-{% endif %}
