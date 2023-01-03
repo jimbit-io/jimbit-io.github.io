@@ -22,15 +22,6 @@ $interests = @{
 }
 {% endhighlight %}
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
-
 Thanks for dropping by, and hopefully see you soon.
 
 ![JimbitLogo](/assets/images/Jimbit-Logo-Transparant-Square-100x100.png)
