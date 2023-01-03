@@ -24,4 +24,4 @@ Thanks for dropping by, and hopefully see you soon.
 
 👋 Jim
 
-![JimbitLogo](https://github.com/jimbit-io/jimbit-io.github.io/_data/images/Jimbit-Logo-Transparant-Square-100x100.png)
+![JimbitLogo](/_data/images/Jimbit-Logo-Transparant-Square-100x100.png)
