@@ -12,7 +12,7 @@ Howdy! 🤠
 Over here I will try to focus my posts as much as possible on providing relatively easy to understand tutorials, scripts and how-to's with a strong focus towards real-life IT (networking) challenges.
 
 ### Points of interest at time of writing are:
-{% highlight posh %}
+{% highlight posh lineos %}
 $interests = @{
     Networking     = "Cisco, Palo Alto, Fortinet"
     Infrastructure = "Azure"
@@ -21,6 +21,15 @@ $interests = @{
     Trends         = "Zero Trust, IaC"
 }
 {% endhighlight %}
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
 
 Thanks for dropping by, and hopefully see you soon.
 
