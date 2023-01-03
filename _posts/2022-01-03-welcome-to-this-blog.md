@@ -24,4 +24,4 @@ Thanks for dropping by, and hopefully see you soon.
 
 👋 Jim
 
-<img src="/_data/images/Jimbit-Logo-Transparant.png" width=10% height=10%>
+<a href="jimbit.io"><img src="/_data/images/Jimbit-Logo-Transparant.png" width=10% height=10%></a>
