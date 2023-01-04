@@ -24,6 +24,4 @@ $interests = @{
 
 Thanks for dropping by, and hopefully see you soon.
 
-![JimbitLogo](/assets/images/Jimbit-Logo-Transparant-Square-100x100.png)
-
 👋 Jim
