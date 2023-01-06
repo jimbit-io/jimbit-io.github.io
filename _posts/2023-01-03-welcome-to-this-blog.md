@@ -2,7 +2,7 @@
 title: "Welcome to this blog."
 layout: post
 category: blog
-tags: [non-technical]
+tags: non-technical
 ---
 
 Howdy! 🤠
