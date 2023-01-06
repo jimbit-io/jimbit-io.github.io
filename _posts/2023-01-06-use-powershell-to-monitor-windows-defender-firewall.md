@@ -2,7 +2,7 @@
 title: "Use PowerShell to monitor Windows Defender firewall"
 layout: post
 category: blog
-tags: [powershell],[windows-server]
+tags: powershell,windows-server
 ---
 
 I'm trying to think of a proper reason for my first real post to be about Windows Defender firewall, since I hardly ever monitor it. With (hardware) network appliances, providing more than capable monitoring/analyzers, or even old-school switch ACL's, why go through the trouble of using Windows Defender firewall logs which are neither viewable in real-time nor formatted in a proper fileformat?
