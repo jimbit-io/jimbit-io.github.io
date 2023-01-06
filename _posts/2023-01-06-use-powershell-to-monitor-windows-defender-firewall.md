@@ -2,7 +2,7 @@
 title: "Use PowerShell to monitor Windows Defender firewall"
 layout: post
 category: blog
-tags: powershell,windows-firewall
+tags: [powershell],[windows-server]
 ---
 
 I'm trying to think of a proper reason for my first real post to be about Windows Defender firewall, since I hardly ever monitor it. With (hardware) network appliances, providing more than capable monitoring/analyzers, or even old-school switch ACL's, why go through the trouble of using Windows Defender firewall logs which are neither viewable in real-time nor formatted in a proper fileformat?
@@ -15,9 +15,7 @@ Well... Most of the time there probably isn't a very good reason to. However, it
 As a real-life example, I wanted to backup a WLC's config over TFTP, which defaults to UDP/69. There file wouldn't upload to the TFTP server and since both hosts resided within the same subnet, chances were that Defender firewall blocked the incoming traffic.
 
 So let's confirm the theory, right? For this situation I created a PowerShell script which makes it easier to go through the logs...
-
-readmore
-
+<!--more-->
 # The script laid out
 I try to keep my scripts here relatively simple, if you like the idea but prefer to implement more advanced function, catch statements, debugging, etcetera, feel free to copy the source and change it to whatever is desired.
 
@@ -27,4 +25,4 @@ The script assumes the Windows Defender firewall is using the 'Domain' profile w
 
 - There's the variables/splat that need to be checked and set to whatever is needed for the situation.
 - Section one invokes a simple if-check to see if the 'Domain' profile is set to enabled. If it is, the script proceeds
-- ...
+- ...post to be continued...
