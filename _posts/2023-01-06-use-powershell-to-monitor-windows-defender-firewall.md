@@ -17,7 +17,7 @@ As a real-life example, I wanted to backup a WLC's config over TFTP, which defau
 So let's confirm the theory, right? For this situation I created a PowerShell script which makes it easier to go through the logs...
 <!--more-->
 # The script laid out
-I try to keep my scripts here relatively simple, if you like the idea but prefer to implement more advanced function, catch statements, debugging, etcetera, feel free to copy the source and change it to whatever is desired.
+I try to keep my scripts here relatively simple, if you like the idea but prefer to implement more advanced function, catch statements, debugging, etcetera. Feel free to copy the source and change it to whatever is desired.
 
 So what is going on?
 Let's start off with that it invoked commands remotely via SSH remoting. I prefer remoting over SSH because it is cross-platform. This means both sides need a minimum of version 6x. Here's a short overview of its actions;
