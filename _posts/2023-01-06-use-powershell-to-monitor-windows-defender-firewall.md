@@ -17,11 +17,11 @@ As a real-life example, I wanted to backup a WLC's config over TFTP, which defau
 So let's confirm the theory, right? For this situation I created a PowerShell script which makes it easier to go through the logs...
 <!--more-->
 # The script laid out
-I try to keep my scripts here relatively simple, if you like the idea but prefer to implement more advanced function, catch statements, debugging, etcetera. Feel free to copy the source and change it to whatever is desired.
-
 So what is going on?
-Let's start off with that it invoked commands remotely via SSH remoting. I prefer remoting over SSH because it is cross-platform. This means both sides need a minimum of version 6x. Here's a short overview of its actions;
+Let's start off with that it invoked commands remotely via SSH remoting. I prefer remoting over SSH because it is cross-platform. This does mean both sides need a minimum of posh 6x. Here's a short overview of its actions;
 - There's the variables/splat that need to be checked and set to whatever is needed for the situation.
 - Section one invokes a simple if-check to see if the 'Domain' profile is set to enabled. If thats the case, the script proceeds to start logging (assuming firewall logging is not already enabled).
 
 ...post to be continued soon :)...
+
+__Disclaimer:__ _I try to keep my scripts here relatively simple, if you like the idea but prefer to implement more advanced function, catch statements, debugging, etcetera. Feel free to copy the source and change it to whatever is desired. Make sure to understand what is happening before running a script, adjusting it for your situation when and where required._
