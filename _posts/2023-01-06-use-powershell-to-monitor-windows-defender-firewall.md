@@ -5,7 +5,7 @@ category: blog
 tags: powershell,windows-server
 ---
 
-I'm trying to think of a proper reason for my first real post to be about Windows Defender firewall, since I hardly ever monitor it. With (hardware) network appliances, providing more than capable monitoring/analyzers, or even old-school switch ACL's, why go through the trouble of using Windows Defender firewall logs which are neither viewable in real-time nor formatted in a proper fileformat?
+I'm trying to think of a proper reason for my first technical post to be about Windows Defender firewall, since I don't consult it that much. With (hardware) network appliances, providing more than capable monitoring/analyzers, or even old-school switch ACL's, why go through the trouble of using Windows Defender firewall logs which are neither viewable in real-time nor formatted in a proper fileformat?
 
 Well... Most of the time there probably isn't a very good reason to. However, it does offer a few advantages;
 - You can't get much closer to the source than the OS logging itself, right? At this level you'll be sure to see if a packet even reaches the system and if it does; how is it processed?
