@@ -14,6 +14,7 @@ Insert contact card here.
 ![JimbitLogo]({{ site.url }}/assets/images/Jimbit-Logo-Transparant-Square-100x100.png)
 
 > KvK registration: 77216180
+> 
 > VAT/BTW ID: NL003164065B69
 
 ... you can [get the PDF]({{ site.url }}/assets/mydoc.pdf) directly.
