@@ -128,7 +128,8 @@ Here's a short overview of its actions;
 - Then lastly, the remote CSV-file gets copied over to a local directory of choice, where it can be imported to Excel or any other CSV viewer/editor.
 
 Now let's see... What do we have here? Looks like we found the culprit.
-	
-...
+![JimbitLogo]({{ site.url }}/assets/images/posts/20230106 - UDP dropped.png)
+
+Hope you enjoyed the post and that it will help you quickly track down Windows Defender firewall behavior remotely.
 
 > **Disclaimer:** *I try to keep my scripts here relatively simple, if you like the idea but prefer to implement advanced functionality such as: functions, try/catch statements, debugging, etcetera. Feel free to copy the source and change it to whatever is desired. Make sure to understand what is happening before running a script, adjusting it for your situation when and where required.*
