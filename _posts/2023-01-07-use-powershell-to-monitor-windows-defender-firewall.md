@@ -12,6 +12,7 @@ Well... Most of the time there probably isn't a very good reason to. However, it
 - You can't get much closer to the source than the OS logging itself, right? At this level you'll be sure to see if a packet even reaches the system and if it does; how is it processed?
 - A lot of (enterprise) networks still have their VLAN gateways reside on switch virtual interfaces, sometimes even without ACLs which make it unfriendly to monitor inter-VLAN traffic.
 - WireShark will always be a much better choice to monitor incoming or outgoing traffic within an OS'es NIC. However, most sysadmins do not wish to install 3rd party tools on their VM's. Especially tools such as WireShark which can have a negative effect on reliability and performance within a production environment.
+- A sysadmin will not always have authorization to network equipment. If you want to 'prove' to a network admin whether or not network traffic arrives at a specific host, this will provide a proper indication.
 
 As a real-life example, I wanted to backup a WLC's config over TFTP, which defaults to UDP/69. The file failed to upload to the TFTP server and seeing that both hosts resided within the same subnet, chances were that Defender firewall blocked the incoming traffic.
 
