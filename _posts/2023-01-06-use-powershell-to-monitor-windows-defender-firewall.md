@@ -17,7 +17,103 @@ As a real-life example, I wanted to backup a WLC's config over TFTP, which defau
 So let's confirm the theory, right? For this situation I created a PowerShell script which makes it easier to go through the logs...
 <!--more-->
 # The script
-...
+{% highlight posh lineos %}
+<#
+.LINK
+  https://learn.microsoft.com/en-us/powershell/module/netsecurity/set-netfirewallprofile
+.SYNOPSIS
+  Excerpt Windows Defender firewall log remotely.
+.DESCRIPTION
+  Start Windows Defender firewall logfile by custom name.
+  Stop logging after key input.
+  Convert standard logfile to usable .csv file.
+  Copy file from remote to local location.
+.EXAMPLE
+  .\ExcerptWindowsFirewallLog.ps1
+.NOTES
+  OS requirement(s):		- PowerShell Core 7.x (confirmed)
+  Module requirement(s)		- No additional modules/features required
+
+  Author:					Jimmy van Ameyde
+  Website:					jimbit.io
+  Contact:					jva@jimbit.io
+							github.com/jimbit-io
+							linkedin.com/in/jvameyde/
+#>
+
+# Variables (set these by choice)
+$remoteHost = New-PSSession -HostName "<remotehost>" -UserName "<username>" -Port 22 -SSHTransport
+$fileName = "LogExcerpt"
+$fileDir = "C:\fwlogs\" # This directory has to exist when script is run!
+$fullLog = "$($fileDir)$($fileName).log"
+$fullCsv = "$($fileDir)$($fileName).csv"
+$toLocalFile = "/Users/<username>/<subfolder>/$($fileName).csv" # Change to local directory of choice file output
+$logWaitTime = 30 # In seconds
+
+
+# Firewall settings splat for logging everything
+$enableFwLog = @{
+	Name				= "Domain"
+	LogMaxSizeKiloBytes	= "4096" # Default: 4096. When size limit is reached, 1x .old and regular logfile are kept
+	LogAllowed			= "True"
+	LogBlocked			= "True"
+	LogIgnored			= "True"
+	LogFileName 		= $fullLog # Default value: "%systemroot%\system32\LogFiles\Firewall\pfirewall.log"
+}
+
+# Start Windows Firewall logging on 'Domain' profile
+Invoke-Command -Session $remoteHost -ScriptBlock {
+	$fwlDomainEnabled = Get-NetFireWallProfile -Name Domain
+	if ([string]$fwlDomainEnabled.Enabled -eq 'True') {
+		Set-NetFireWallProfile @Using:enableFwLog
+		Write-Host "Firewall logging set for profile: Domain"
+	}
+}
+
+
+# Wait for set amount before stopping logfiles
+Get-Date; Start-Sleep -Seconds $logWaitTime; Get-Date
+
+
+# Stop Windows Firewall logging on 'Domain' profile
+Invoke-Command -Session $remoteHost -ScriptBlock {
+	$fwlDomainEnabled = Get-NetFireWallProfile -Name Domain
+    if ([string]$fwlDomainEnabled.Enabled -eq 'True') {
+		$disableFwLog = @{
+			Name				= "Domain"
+			LogAllowed			= "False"
+			LogBlocked			= "False"
+			LogIgnored			= "False"
+		}
+		Set-NetFireWallProfile @disableFwLog
+		Write-Host "Firewall logging stopped for profile: Domain"
+	}
+}
+
+
+# Modify generated logfile to useable .csv file
+Invoke-Command -Session $remoteHost -ScriptBlock {
+	# Copy logfile and rename from .log to .csv extension to avoid Base Filtering Engine file-lock issue
+	Copy-Item -Path "$Using:fullLog" -Destination "$Using:fullCsv"
+
+	# Remove first 5 lines (header) from copied .csv file
+	Set-Content -Path $Using:fullCsv -Value (Get-Content $Using:fullCsv | Select-Object -Skip 5)
+
+	# Add new header to modify log as useable .csv file, replaces spaces with delimiter of choice
+	$csvHeader = "date time action protocol src-ip dst-ip src-port dst-port size tcpflags tcpsyn tcpack tcpwin icmptype icmpcode info path"
+	$delimiter = ","
+	@($($csvHeader)) + (Get-Content $Using:fullCsv) | Set-Content -Path $Using:fullCsv
+	(Get-Content $Using:fullCsv).Replace(" ","$($delimiter)") | Set-Content -Path $Using:fullCsv
+}
+
+
+# Copy remote file to local system
+Copy-Item -Path $fullCsv -Destination $toLocalFile -FromSession $remoteHost
+
+
+# Close remote PowerShell session
+$remoteHost | Remove-PSSession
+{% endhighlight %}
 
 So what's going on?
 Let's start off with that the script invokes commands remotely via SSH remoting. I prefer remoting over SSH because it is cross-platform. This can easily be changed to WinRM style remoting by changing the New-PSSession parameters.
