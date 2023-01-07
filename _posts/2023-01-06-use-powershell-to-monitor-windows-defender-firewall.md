@@ -24,4 +24,4 @@ Let's start off with that the script invokes commands remotely via SSH remoting.
 
 ...post to be continued soon :)...
 
-__Disclaimer:__ _I try to keep my scripts here relatively simple, if you like the idea but prefer to implement more advanced function, catch statements, debugging, etcetera. Feel free to copy the source and change it to whatever is desired. Make sure to understand what is happening before running a script, adjusting it for your situation when and where required._
+> **Disclaimer:** *I try to keep my scripts here relatively simple, if you like the idea but prefer to implement more advanced function, catch statements, debugging, etcetera. Feel free to copy the source and change it to whatever is desired. Make sure to understand what is happening before running a script, adjusting it for your situation when and where required.*
