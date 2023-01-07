@@ -122,9 +122,13 @@ Let's start off with that the script invokes commands remotely via SSH remoting.
 Here's a short overview of its actions;
 - There's the variables/splat that need to be checked and set to whatever is needed for the situation. Please note that the default firewall logging directory is: "%systemroot%\system32\LogFiles\Firewall\pfirewall.log". I recommend changing this since having the splat have %systemroot% in its variables does not work well with the rest of the script.
 - Section one invokes a simple if-check to see if the 'Domain' profile is set to enabled. If that's the case, the script proceeds to start logging (assuming firewall logging is not already enabled).
-- There is a built in wait period where user-interaction (press Enter key) is required. During this wait period you can trigger whatever network traffic you're trying to catch before continueing.
+- There is variable wait period built-in. During this wait period you can trigger whatever network traffic you're trying to catch (such as in my example: incoming TFTP traffic.
 - The firewall logging is then disabled/stopped. This section can of course be commented out, in case you don't want to stop logging.
 - The generated logfile is copied to a similar filename but with .csv extension. This also prevents any occuring Base Filtering Engine file-lock errors when trying to modify the original logfile.
 - Then lastly, the remote CSV-file gets copied over to a local directory of choice, where it can be imported to Excel or any other CSV viewer/editor.
+
+Now let's see... What do we have here? Looks like we found the culprit.
+	
+...
 
 > **Disclaimer:** *I try to keep my scripts here relatively simple, if you like the idea but prefer to implement advanced functionality such as: functions, try/catch statements, debugging, etcetera. Feel free to copy the source and change it to whatever is desired. Make sure to understand what is happening before running a script, adjusting it for your situation when and where required.*
