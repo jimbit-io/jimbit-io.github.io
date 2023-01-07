@@ -35,11 +35,11 @@ So let's confirm the theory, right? For this situation I created a PowerShell sc
   OS requirement(s):		- PowerShell Core 7.x (confirmed)
   Module requirement(s)		- No additional modules/features required
 
-  Author:					Jimmy van Ameyde
-  Website:					jimbit.io
-  Contact:					jva@jimbit.io
-							github.com/jimbit-io
-							linkedin.com/in/jvameyde/
+  Author:			Jimmy van Ameyde
+  Website:			jimbit.io
+  Contact:			jva@jimbit.io
+				github.com/jimbit-io
+				linkedin.com/in/jvameyde/
 #>
 
 # Variables (set these by choice)
@@ -55,11 +55,11 @@ $logWaitTime = 30 # In seconds
 # Firewall settings splat for logging everything
 $enableFwLog = @{
 	Name				= "Domain"
-	LogMaxSizeKiloBytes	= "4096" # Default: 4096. When size limit is reached, 1x .old and regular logfile are kept
+	LogMaxSizeKiloBytes		= "4096" # Default: 4096. When size limit is reached, 1x .old and regular logfile are kept
 	LogAllowed			= "True"
 	LogBlocked			= "True"
 	LogIgnored			= "True"
-	LogFileName 		= $fullLog # Default value: "%systemroot%\system32\LogFiles\Firewall\pfirewall.log"
+	LogFileName 			= $fullLog # Default value: "%systemroot%\system32\LogFiles\Firewall\pfirewall.log"
 }
 
 # Start Windows Firewall logging on 'Domain' profile
@@ -79,7 +79,7 @@ Get-Date; Start-Sleep -Seconds $logWaitTime; Get-Date
 # Stop Windows Firewall logging on 'Domain' profile
 Invoke-Command -Session $remoteHost -ScriptBlock {
 	$fwlDomainEnabled = Get-NetFireWallProfile -Name Domain
-    if ([string]$fwlDomainEnabled.Enabled -eq 'True') {
+	if ([string]$fwlDomainEnabled.Enabled -eq 'True') {
 		$disableFwLog = @{
 			Name				= "Domain"
 			LogAllowed			= "False"
@@ -127,4 +127,4 @@ Here's a short overview of its actions;
 - The generated logfile is copied to a similar filename but with .csv extension. This also prevents any occuring Base Filtering Engine file-lock errors when trying to modify the original logfile.
 - Then lastly, the remote CSV-file gets copied over to a local directory of choice, where it can be imported to Excel or any other CSV viewer/editor.
 
-> **Disclaimer:** *I try to keep my scripts here relatively simple, if you like the idea but prefer to implement more advanced function, catch statements, debugging, etcetera. Feel free to copy the source and change it to whatever is desired. Make sure to understand what is happening before running a script, adjusting it for your situation when and where required.*
+> **Disclaimer:** *I try to keep my scripts here relatively simple, if you like the idea but prefer to implement advanced functionality such as: functions, try/catch statements, debugging, etcetera. Feel free to copy the source and change it to whatever is desired. Make sure to understand what is happening before running a script, adjusting it for your situation when and where required.*
