@@ -1,6 +1,6 @@
 title: "jimbit.io"
 author: "Jimmy van Ameyde"
-description: "jimbit.io is built via GitHub Pages, Jekyll and theme 'Contrast'."
+description: "jimbit.io is built via GitHub Pages, Jekyll with Contrast theme."
 permalink: /:title/
 lang: "en"
 excerpt_separator: <!--more-->
