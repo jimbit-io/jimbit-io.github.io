@@ -1,5 +1,5 @@
 ## About
-👋 Hi, nice to meet you. I'm Jimmy van Ameyde, residing in the Netherlands and working as a freelancer under my company-name Jimbit.
+👋 Hi, nice to meet you. I'm Jimmy van Ameyde, residing in the Netherlands and working as a freelancer under my own company named Jimbit.
 
 I've been working in IT for more than twenty years now, focussing more on the network side of things for over a little more than a decade. Within the IT landscape, I have a passion for (re-)designing IT infrastructure to fit modern standards. Doing this, I place high priority in its modularity, scalability and security, leveraging modern principles such as Zero-Trust and Infrastructure as Code while keeping things future-proof. 
 
