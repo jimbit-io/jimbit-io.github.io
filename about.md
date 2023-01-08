@@ -11,9 +11,7 @@ Get my [curriculum vitae]({{ site.url }}/assets/files/JimmyvanAmeyde-CurriculumV
 If you want to reach out, please contact me via [Linkedin](https://www.linkedin.com/in/jvameyde).
 
 ## Company information
-
-![JimbitLogo]({{ site.url }}/assets/images/Jimbit-Logo-700x500.png)
-
+![JimbitLogo]({{ site.url }}/assets/images/Jimbit-Logo-400p.png)
 > KvK registration: 77216180
 > 
 > VAT/BTW ID: NL003164065B69
