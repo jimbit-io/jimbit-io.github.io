@@ -7,17 +7,12 @@ Aside from implementing various IT solutions, I have also been the technical pro
 
 Get my [curriculum vitae]({{ site.url }}/assets/files/JimmyvanAmeyde-CurriculumVitae-NoPrivateData.pdf) directly, last updated Jan. 2023.
 
-
-## References
-For any references, please reach out to me via my contact card.
-
 ## Contact
-Insert contact card here.
-
+If you want to reach out, please contact me via [Linkedin](https://www.linkedin.com/in/jvameyde).
 
 ## Company information
 
-![JimbitLogo]({{ site.url }}/assets/images/Jimbit-Logo-Transparant-Square-100x100.png)
+![JimbitLogo]({{ site.url }}/assets/images/Jimbit-Logo-Transparant-Square.png)
 
 > KvK registration: 77216180
 > 
