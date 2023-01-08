@@ -12,7 +12,7 @@ If you want to reach out, please contact me via [Linkedin](https://www.linkedin.
 
 ## Company information
 
-![JimbitLogo]({{ site.url }}/assets/images/Jimbit-Logo-Transparant-Square.png)
+![JimbitLogo]({{ site.url }}/assets/images/Jimbit-Logo-700x500.png)
 
 > KvK registration: 77216180
 > 
