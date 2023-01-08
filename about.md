@@ -3,7 +3,7 @@
 
 I've been working in IT for more than twenty years now, focussing more on the network side of things for over a little more than a decade. Within the IT landscape, I have a passion for (re-)designing IT infrastructure to fit modern standards. Doing this, I place high priority in its modularity, scalability and security, leveraging modern principles such as Zero-Trust and Infrastructure as Code while keeping things future-proof. 
 
-Aside from implementing various IT solutions, I have also been technical project lead for multiple migration projects. From on-premise datacenter(s) to cloud (and vice versa) as well as 
+Aside from implementing various IT solutions, I have also been the technical project lead for multiple migration projects; from on-premises datacenter(s) to cloud and vice-versa, as well as moving from a hosted IT partner solution to in-house IT and vice-versa.
 
 Get my [curriculum vitae]({{ site.url }}/assets/files/JimmyvanAmeyde-CurriculumVitae-NoPrivateData.pdf) directly, last updated Jan. 2023.
 
