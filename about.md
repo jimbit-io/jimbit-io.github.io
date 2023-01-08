@@ -5,7 +5,7 @@ I've been working in IT for more than twenty years now, focussing more on the ne
 
 Aside from implementing various IT solutions, I have also been technical project lead for multiple migration projects. From on-premise datacenter(s) to cloud (and vice versa) as well as 
 
-Get my [curriculum vitae]({{ site.url }}/assets/JimmyvanAmeyde-CurriculumVitae-NoPrivateData.pdf) directly, last updated Jan. 2023.
+Get my [curriculum vitae]({{ site.url }}/assets/files/JimmyvanAmeyde-CurriculumVitae-NoPrivateData.pdf) directly, last updated Jan. 2023.
 
 
 ## References
