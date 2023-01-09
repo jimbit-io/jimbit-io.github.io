@@ -12,7 +12,7 @@ Get my [curriculum vitae]({{ site.url }}/assets/files/JimmyvanAmeyde-CurriculumV
 ## Contact
 If you want to reach out, please contact me via [Linkedin](https://www.linkedin.com/in/jvameyde).
 
-<div class="badge-base LI-profile-badge" data-locale="nl_NL" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="jvameyde" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://nl.linkedin.com/in/jvameyde?trk=profile-badge">Jimmy van Ameyde</a></div>
+<div class="badge-base LI-profile-badge" data-locale="nl_NL" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="jvameyde" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://nl.linkedin.com/in/jvameyde?trk=profile-badge">Jimmy van Ameyde</a></div>
 
 ## Company information
 ![JimbitLogo]({{ site.url }}/assets/images/Jimbit-Logo-400p.png)
