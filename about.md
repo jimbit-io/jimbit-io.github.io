@@ -17,7 +17,8 @@ If you want to reach out, please contact me via [Linkedin](https://www.linkedin.
 ## Company information
 Jimbit  
 Moesstraat 15, 3581 RR  
-Utrecht, The Netherlands  
+Utrecht, The Netherlands
+
 ![JimbitLogo]({{ site.url }}/assets/images/Jimbit-Logo-Cropped-350.png)  
 > KvK registration: 77216180  
 > VAT/BTW ID: NL003164065B69
