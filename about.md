@@ -1,3 +1,5 @@
+![JimbitLogo]({{ site.url }}/assets/images/JvA-About.png)
+
 ## About
 👋 Hi, nice to meet you. I'm Jimmy van Ameyde, residing in the Netherlands and working as a freelancer under my own company named Jimbit.
 
