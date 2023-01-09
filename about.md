@@ -12,14 +12,12 @@ Get my [curriculum vitae]({{ site.url }}/assets/files/JimmyvanAmeyde-CurriculumV
 ## Contact
 If you want to reach out, please contact me via [Linkedin](https://www.linkedin.com/in/jvameyde).
 
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script><div class="badge-base LI-profile-badge" data-locale="nl_NL" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="jvameyde" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://nl.linkedin.com/in/jvameyde?trk=profile-badge">Jimmy van Ameyde</a></div>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"><div class="badge-base LI-profile-badge" data-locale="nl_NL" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="jvameyde" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://nl.linkedin.com/in/jvameyde?trk=profile-badge">Jimmy van Ameyde</a></div></script>
 
 ## Company information
-Jimbit
-Moesstraat 15, 3581 RR
-Utrecht, The Netherlands
-
-![JimbitLogo]({{ site.url }}/assets/images/Jimbit-Logo-400p.png)
-> KvK registration: 77216180
-> 
+Jimbit  
+Moesstraat 15, 3581 RR  
+Utrecht, The Netherlands  
+![JimbitLogo]({{ site.url }}/assets/images/Jimbit-Logo-400p.png)  
+> KvK registration: 77216180  
 > VAT/BTW ID: NL003164065B69
